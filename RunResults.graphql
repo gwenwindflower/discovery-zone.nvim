@@ -1,4 +1,4 @@
-query RunResultsQuery($jobId: BigInt!, $runId: BigInt, $withModels: Boolean!) {
+query RunResults($jobId: BigInt!, $runId: BigInt, $withModels: Boolean!) {
   job(id: $jobId, runId: $runId) {
     id
     runId

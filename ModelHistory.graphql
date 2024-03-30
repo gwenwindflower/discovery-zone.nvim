@@ -1,0 +1,14 @@
+query ModelHistory($environmentId: BigInt!, $identifier: String!) {
+  environment(id: $environmentId) {
+    applied {
+      modelHistoricalRuns(identifier: $identifier, lastRunCount: 5) {
+        name
+        uniqueId
+        runResults {
+          status
+          executionTime
+        }
+      }
+    }
+  }
+}
