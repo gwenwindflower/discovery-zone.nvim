@@ -1,0 +1,19 @@
+query RunResultsQuery($jobId: BigInt!, $runId: BigInt, $withModels: Boolean!) {
+  job(id: $jobId, runId: $runId) {
+    id
+    runId
+    models @include(if: $withModels) {
+      uniqueId
+      materializedType
+      resourceType
+      materializedType
+      executionTime
+      name
+      database
+      schema
+      runResults {
+        skip
+      }
+    }
+  }
+}

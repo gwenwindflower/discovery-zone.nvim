@@ -1,0 +1,15 @@
+{
+  "name": "discovery-zone.nvim",
+  "version": "1.0.0",
+  "description": "A Neovim playground for exploring the dbt Labs Discovery API",
+  "main": "explore.graphql",
+  "scripts": {
+    "query": "https POST https://metadata.cloud.getdbt.com/graphql query=@$QUERY.graphql variables:=@$QUERY-variables.json --json --auth $DBT_CLOUD_DISCOVERY_API_KEY --auth-type bearer"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^16.8.1",
+    "graphql-language-service-cli": "^3.3.33"
+  }
+}
