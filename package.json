@@ -5,7 +5,8 @@
   "main": "explore.graphql",
   "scripts": {
     "query": "https POST https://metadata.cloud.getdbt.com/graphql query=@$QUERY.graphql variables:=@$QUERY-variables.json --json --auth $DBT_CLOUD_DISCOVERY_API_KEY --auth-type bearer",
-    "queryr": "https POST https://metadata.cloud.getdbt.com/graphql query=@$QUERY.graphql variables:=@$QUERY-variables.json --json --auth $DBT_CLOUD_DISCOVERY_API_KEY --auth-type bearer > results.json"
+    "queryr": "https POST https://metadata.cloud.getdbt.com/graphql query=@$QUERY.graphql variables:=@$QUERY-variables.json --json --auth $DBT_CLOUD_DISCOVERY_API_KEY --auth-type bearer > results.json",
+    "queryj": "https POST https://metadata.cloud.getdbt.com/graphql query=@$QUERY.graphql variables:=@$QUERY-variables.json --json --auth $DBT_CLOUD_DISCOVERY_API_KEY --auth-type bearer | jless"
   },
   "author": "",
   "license": "ISC",

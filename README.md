@@ -63,10 +63,18 @@ By default it looks for an environment variable called `DBT_CLOUD_DISCOVERY_API_
 
 ### Install `httpie`
 
-HTTPie is a great tool for making API requests from the command line. I find it to have easier to read syntax than `curl` especially for this kind of thing. You can install it with Homebrew:
+HTTPie is a great tool for making API requests from the command line. I find it to have easier to read syntax than `curl` especially for this kind of thing with a bit more complexity. You can install it with Homebrew:
 
 ```bash
 brew install httpie
+```
+
+### _Optional_ Install `jless`
+
+`jless` is really neat Rust tool for pretty-printing JSON and exploring it interactively. It's a great tool, [you can explore its documentation here](https://jless.io/user-guide). It's necessary for using the `queryj` script command. You can install it with Homebrew:
+
+```bash
+brew install jless
 ```
 
 After all that you should be set up!
@@ -90,3 +98,9 @@ QUERY=[name] bun queryr
 ```
 
 This will pipe the file to a `results.json` file to provide a scratchpad for your analysis.
+
+If you want to get the JSON piped into an interactive terminal viewer, you can use the `queryj` script which will pipe the results into `jless`:
+
+```bash
+QUERY=[name] bun queryj
+```
