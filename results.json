@@ -1,0 +1,65 @@
+{
+  "data": {
+    "environment": {
+      "applied": {
+        "modelHistoricalRuns": [
+          {
+            "name": "stg_supplies",
+            "uniqueId": "model.jaffle_shop.stg_supplies",
+            "runResults": [
+              {
+                "status": "success",
+                "executionTime": 0.8908970355987549,
+                "runElapsedTime": 15.023517370223999
+              }
+            ]
+          },
+          {
+            "name": "stg_supplies",
+            "uniqueId": "model.jaffle_shop.stg_supplies",
+            "runResults": [
+              {
+                "status": "success",
+                "executionTime": 0.9192063808441162,
+                "runElapsedTime": 8.333813428878784
+              }
+            ]
+          },
+          {
+            "name": "stg_supplies",
+            "uniqueId": "model.jaffle_shop.stg_supplies",
+            "runResults": [
+              {
+                "status": "success",
+                "executionTime": 0.9815266132354736,
+                "runElapsedTime": 7.397350072860718
+              }
+            ]
+          },
+          {
+            "name": "stg_supplies",
+            "uniqueId": "model.jaffle_shop.stg_supplies",
+            "runResults": [
+              {
+                "status": "success",
+                "executionTime": 1.0637516975402832,
+                "runElapsedTime": 12.332931995391846
+              }
+            ]
+          },
+          {
+            "name": "stg_supplies",
+            "uniqueId": "model.jaffle_shop.stg_supplies",
+            "runResults": [
+              {
+                "status": "success",
+                "executionTime": 1.1066832542419434,
+                "runElapsedTime": 9.927000045776367
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

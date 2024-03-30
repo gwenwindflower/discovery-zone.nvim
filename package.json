@@ -4,7 +4,8 @@
   "description": "A Neovim playground for exploring the dbt Labs Discovery API",
   "main": "explore.graphql",
   "scripts": {
-    "query": "https POST https://metadata.cloud.getdbt.com/graphql query=@$QUERY.graphql variables:=@$QUERY-variables.json --json --auth $DBT_CLOUD_DISCOVERY_API_KEY --auth-type bearer"
+    "query": "https POST https://metadata.cloud.getdbt.com/graphql query=@$QUERY.graphql variables:=@$QUERY-variables.json --json --auth $DBT_CLOUD_DISCOVERY_API_KEY --auth-type bearer",
+    "queryr": "https POST https://metadata.cloud.getdbt.com/graphql query=@$QUERY.graphql variables:=@$QUERY-variables.json --json --auth $DBT_CLOUD_DISCOVERY_API_KEY --auth-type bearer > results.json"
   },
   "author": "",
   "license": "ISC",

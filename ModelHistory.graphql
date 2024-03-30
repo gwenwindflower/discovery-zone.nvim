@@ -7,6 +7,7 @@ query ModelHistory($environmentId: BigInt!, $identifier: String!) {
         runResults {
           status
           executionTime
+          runElapsedTime
         }
       }
     }

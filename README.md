@@ -80,3 +80,13 @@ Pass the root `[name]` as an environment variable to the `query` script and ever
 ```bash
 QUERY=[name] bun query
 ```
+
+You can also run whatever pipe stuff after it you want, it just returns JSON to stdout.
+
+If you want to save the output to a file easily, for better analyzing, there's a shorthand:
+
+```bash
+QUERY=[name] bun queryr
+```
+
+This will pipe the file to a `results.json` file to provide a scratchpad for your analysis.
