@@ -1,6 +1,6 @@
 # Discovery Zone
 
-Discovery zone is a Neovim playground for exploring the dbt Cloud GraphQL APIs, specifically the Discovery API, although it's one line to cut over to the Semantic Layer API.
+Discovery Zone is a Neovim playground for exploring the dbt Cloud GraphQL APIs, specifically the Discovery API, although it's one line to cut over to the Semantic Layer API.
 
 It aims to provide a rich development environment for writing and testing dbt GraphQL queries, with the following features:
 
